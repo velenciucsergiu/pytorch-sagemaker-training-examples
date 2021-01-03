@@ -163,7 +163,7 @@ def main():
                             print("Epoch {0} Step {1}/{2} Iteration {3} Loss {4}".format(epoch, bid, len(train_loader), steps, epoch_loss / steps))
                             est = (time.time() - start) * (len(train_loader) - bid)
                             print("Time/batch {0}  is {1}".format(bid, time.time() - start))
-                            print("Estimated time left to end of epoch {}".format(est))
+                            print("Estimated time left to end of sequence {}".format(est))
                     total_read += bytes_read
                     epoch_bytes_read += bytes_read
 
