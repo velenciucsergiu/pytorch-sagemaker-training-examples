@@ -1,5 +1,5 @@
 .idea
-.ipynb_checkpoint
+.ipynb_checkpoints
 ./base_image/.ipynb_checkpoints
 ./base_image/code/.ipynb_checkpoints
 ./custom_image/.ipynb_checkpoints
