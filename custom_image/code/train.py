@@ -122,9 +122,8 @@ def save_checkpoints(model, tokenizer, checkpoint_dir, tmp_dir, step):
     current_content = os.listdir(checkpoint_dir)
     for f in current_content:
         #add removing only zip files
-        if os.path.splitext(f) == ".zip":
-            os.remove(os.path.join(checkpoint_dir, f))
-            print(f'File {f} removed')
+        os.remove(os.path.join(checkpoint_dir, f))
+        print(f'File {f} removed')
     directory = os.path.join(tmp_dir,f'checkpoint_step_{step}')
     if not os.path.exists(directory):
         os.mkdir(directory)
